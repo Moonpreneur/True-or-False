@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game: Laws of Indices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="startreset" onclick="startReset()">Start Game</div>
+
+    <div id="logo">
+        <img src="website-logo.png" alt="website-logo">
+    </div>
+    <img src="True or false.jpg" alt="Game Image" class="game-image">
+    <div class="container" id="gameContainer">
+        <h1>True or False?</h1>
+        <p>Arrange the given statements involving arithmetic operation to show whether they are true or false.</p>
+        <div class="score-container">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <div id="timer">Time: <span id="time">02:00</span></div>
+        <div class="game-container">
+            <div class="dropzone" id="trueZone">
+                <h2>TRUE</h2>
+                <div class="placeholder"></div>
+                <div class="placeholder"></div>
+                <div class="placeholder"></div>
+                <div class="placeholder"></div>
+            </div>
+            <div class="dropzone" id="falseZone">
+                <h2>FALSE</h2>
+                <div class="placeholder"></div>
+                <div class="placeholder"></div>
+                <div class="placeholder"></div>
+                <div class="placeholder"></div>
+            </div>
+        </div>
+        <div class="draggables" id="draggablesContainer"></div>
+        <button id="checkAnswer">Check Answer</button>
+    </div>
+
+    <div id="gameOverContainer" style="display: none;">
+        <h1>Game Over!</h1>
+        <p>Your final score is: <span id="finalScore"></span></p>
+    </div>
+    
+    <audio id="correctSound" src="correct-sound.mp3"></audio>
+    <audio id="incorrectSound" src="incorrect-sound.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
